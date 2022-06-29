@@ -1,0 +1,169 @@
+/*   ========== ========== Work ========== ==========   */
+
+.work__section
+{
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.work__section2
+{
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.work__title
+{
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg, #B39565, #B39565 30px, #bb7330 30px, #bb7330 60px, #1C1D20 90px, #1C1D20 90px);
+  background-clip: text;
+  color: transparent;
+  animation: title__line 30s infinite linear;
+  -webkit-animation: title__line 30s infinite linear;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+
+@keyframes title__line
+{
+  from
+  {
+    background-position: 0px;
+  }
+  to
+  {
+    background-position: 1000px;
+  }
+}
+
+.work__container
+{
+  position: absolute;
+  display: flex;
+  width: 80%;
+  height: 600px;
+  margin-left: 2%;
+  background: var(--color-dark);
+}
+
+.work__clip
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.clip1
+{
+  background-image: url(../Content/Project/cara.png);
+  clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+  background-size: cover;
+}
+
+.clip2
+{
+  background-image: url(../Content/Project/educational.png);
+  clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+  background-size: cover;
+}
+
+.clip3
+{
+  background-image: url(../Content/Project/modak.png);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+  background-size: cover;
+}
+
+.clip4
+{
+  background-image: url(../Content/Project/p3.webp);
+  clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+  background-size: cover;
+}
+
+.clip5
+{
+  background-image: url(../Content/Project/p4.webp);
+  clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+  background-size: cover;
+}
+
+.clip6
+{
+  background-image: url(../Content/Project/p6.webp);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+  background-size: cover;
+}
+
+.work__container:hover .work__clip
+{
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.work__container .work__clip:hover
+{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.work__content
+{
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 70%;
+  padding: 20px;
+  background: var(--color-dark);
+  opacity: 0;
+  transition: 0.5s;
+}
+.work__clip:hover .work__content
+{
+  bottom: 0;
+  opacity: 1;
+}
+
+.work__content h1
+{
+  color: var(--color-title);
+}
+
+.work__content p
+{
+  color: var(--color-white);
+}
+
+.button
+{
+  background: var(--color-title);
+  color: var(--color-dark);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.button:hover
+{
+  transform: translateY(-10px);
+}
+
+.button__span
+{
+  color: var(--color-dark);
+}
+

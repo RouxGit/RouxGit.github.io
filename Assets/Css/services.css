@@ -1,0 +1,24 @@
+/*   ========== ========== Work ========== ==========   */
+
+.services__section
+{
+  position: relative;
+  padding: 200px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.services__title
+{
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg, #B39565, #B39565 30px, #bb7330 30px, #bb7330 60px, #1C1D20 90px, #1C1D20 90px);
+  background-clip: text;
+  color: transparent;
+  animation: title__line 30s infinite linear;
+  -webkit-animation: title__line 30s infinite linear;
+  -webkit-background-clip: text;
+  z-index: 1;
+}

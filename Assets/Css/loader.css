@@ -1,0 +1,96 @@
+/*   ========== ========== Loader ========== ==========   */
+
+.loader__section
+{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark);
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.loader__fingerprint
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: url(../Content/Loader/fingerprint.png);
+  background-size: 300px;
+}
+
+.loader__fingerprint::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Content/Loader/fingerprint2.png);
+  background-size: 300px;
+  animation: animate-loader 4s ease-in-out infinite;
+}
+
+@keyframes animate-loader
+{
+  0%,100%
+  {
+    height: 0%;
+  }
+  50%
+  {
+    height: 100%;
+  }
+}
+
+.loader__fingerprint::after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--color-title);
+  border-radius: 8px;
+  filter: drop-shadow(0 0 20px #bb7330) drop-shadow(0 0 60px #bb7330);
+  animation: animate__line 4s ease-in-out infinite;
+}
+
+@keyframes animate__line
+{
+  0%,100%
+  {
+    top: 0%;
+  }
+  50%
+  {
+    top: 100%;
+  }
+}
+
+.loader__h3
+{
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-top: 20%;
+  color: var(--color-title); filter: drop-shadow(0 0 20px #bb7330) drop-shadow(0 0 60px #bb7330);
+  animation: animate__text 0.5s steps(1) infinite;
+}
+
+@keyframes animate__text
+{
+  0%,100%
+  {
+    opacity: 0;
+  }
+  50%
+  {
+    opacity: 1;
+  }
+}
