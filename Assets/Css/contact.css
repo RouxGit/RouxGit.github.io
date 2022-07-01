@@ -1,0 +1,299 @@
+/*   ========== ========== Contact ========== ==========   */
+
+.contact__section
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 100px;
+  background: linear-gradient(90deg, #B39565 0%, #B39565 30%, #1C1D20 30%, #1C1D20 100%);
+}
+
+.contact__text
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.contact__title
+{
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg, #B39565, #B39565 30px, #bb7330 30px, #bb7330 60px, #1C1D20 90px, #1C1D20 90px);
+  background-clip: text;
+  color: transparent;
+  animation: title__line 30s infinite linear;
+  -webkit-animation: title__line 30s infinite linear;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+
+@keyframes title__line
+{
+  from
+  {
+    background-position: 0px;
+  }
+  to
+  {
+    background-position: 1000px;
+  }
+}
+
+.contact__title::before
+{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 6px;
+  background: var(--color-title);
+}
+
+.contact__box
+{
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: 'form info' 'form map';
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.contact__form, .contact__info, .contact__map
+{
+  padding: 40px;
+  background: var(--color-white-light);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.form
+{
+  grid-area: form;
+}
+
+.info
+{
+  grid-area: info;
+}
+
+.map
+{
+  grid-area: map;
+}
+
+.contact__description
+{
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.form__box
+{
+  position: relative;
+  width: 100%;
+}
+
+.row50
+{
+  display: flex;
+  gap: 20px;
+}
+
+.input__box
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.input__span
+{
+  color: var(--color-subtitle);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input__box input
+{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid var(--color-title);
+}
+
+.row100 .input__box
+{
+  width: 100%;
+}
+
+.input__box textarea
+{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid var(--color-title);
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.input__box input[type='submit']
+{
+  background: var(--color-title);
+  color: var(--color-dark-dark);
+  border: none;
+  font-size: 1.1em;
+  max-width: 140px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+.input__box ::placeholder
+{
+  color: var(--color-gray);
+}
+
+/*   ========== Information ==========   */
+
+.info__text
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info__span
+{
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info__paragraph
+{
+  color: var(--color-dark);
+  font-size: 1.1em;
+}
+
+.info__text a
+{
+  color: var(--color-dark);
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/*   ========== Social ==========   */
+
+.contact__social-item
+{
+  margin-top: 40px;
+  display: flex;
+}
+
+.contact__social-link
+{
+  list-style: none;
+  margin-right: 10px;
+}
+
+.contact__social-links
+{
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.contact__social-links:hover
+{
+  background: var(--color-title);
+  transform: translateY(-10px);
+}
+
+.contact__social-img
+{
+  transform: scale(2);
+}
+
+/*   ========== Location ==========   */
+
+.contact__map
+{
+  padding: 0;
+}
+
+iframe
+{
+  width: 100%;
+  height: 100%;
+}
+
+/*   ========== Responsive ==========   */
+
+@media (max-widht: 991px)
+{
+  body
+  {
+    background: #000000;
+  }
+
+  .contact__section
+  {
+    padding: 20px;
+  }
+
+  .contact__box
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'form' 'info' 'map';
+  }
+
+  .row50
+  {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .input__box
+  {
+    width: 100%;
+  }
+
+  .contact__form
+  {
+    padding: 30px;
+  }
+
+  .map
+  {
+    min-height: 300px;
+    padding: 0;
+  }
+}

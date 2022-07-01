@@ -31,10 +31,10 @@
   height: 100%;
   background-image: url(../Content/Loader/fingerprint2.png);
   background-size: 300px;
-  animation: animate-loader 4s ease-in-out infinite;
+  animation: loader-animate 4s ease-in-out infinite;
 }
 
-@keyframes animate-loader
+@keyframes loader-animate
 {
   0%,100%
   {
@@ -57,10 +57,10 @@
   background: var(--color-title);
   border-radius: 8px;
   filter: drop-shadow(0 0 20px #bb7330) drop-shadow(0 0 60px #bb7330);
-  animation: animate__line 4s ease-in-out infinite;
+  animation: loader-line 4s ease-in-out infinite;
 }
 
-@keyframes animate__line
+@keyframes loader-line
 {
   0%,100%
   {
@@ -80,10 +80,10 @@
   letter-spacing: 2px;
   margin-top: 20%;
   color: var(--color-title); filter: drop-shadow(0 0 20px #bb7330) drop-shadow(0 0 60px #bb7330);
-  animation: animate__text 0.5s steps(1) infinite;
+  animation: loader-text 0.5s steps(1) infinite;
 }
 
-@keyframes animate__text
+@keyframes loader-text
 {
   0%,100%
   {

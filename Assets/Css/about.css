@@ -1,114 +1,3 @@
-.nav__container-about
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 8;
-}
-
-/*   ========== ========== Logo ========== ==========   */
-
-.logo-about
-{
-  position: relative;
-  color: var(--color-title);
-  display: inline-block;
-  font-size: 2em;
-  text-decoration: none;
-  font-weight: 800;
-  transition: .5s;
-}
-
-.logo-about:hover
-{
-  color: var(--color-title);
-  transition-delay: 0s;
-  transform: translateY(-10px);
-}
-
-.logo-about::before
-{
-  content: attr(data-text);
-  position: absolute;
-  bottom: -16px;
-  left: 40px;
-  pointer-events: none;
-  z-index: 1;
-  font-size: 0.35em;
-  color: var(--color-title);
-  font-weight: 800;
-  letter-spacing: 100px;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.logo-about:hover::before
-{
-  letter-spacing: 10px;
-  opacity: 1;
-  transition-delay: 0.15s;
-}
-
-/*   ========== ========== Navigation ========== ==========   */
-
-.nav__item-about
-{
-  position: relative;
-  display: flex;
-}
-
-.nav__link-about
-{
-  list-style: none;
-}
-
-.nav__links-about
-{
-  display: inline-block;
-  color: var(--color-subtitle);
-  font-weight: 600;
-  font-size: 1.1em;
-  margin-left: 10px;
-  padding: 8px 18px;
-  text-decoration: none;
-  user-select: none;
-  transition: 0.5s ease-in-out;
-}
-
-.nav__links-about:hover
-{
-  color: var(--color-subtitle);
-  transition-delay: 0s;
-  transform: translateY(-10px);
-}
-
-.nav__links-about::before
-{
-  content: attr(data-text);
-  position: absolute;
-  bottom: -10px;
-  pointer-events: none;
-  z-index: 1;
-  font-size: 0.35em;
-  color: var(--color-subtitle);
-  font-weight: 500;
-  letter-spacing: 100px;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-
-.nav__links-about:hover::before
-{
-  letter-spacing: 6px;
-  opacity: 1;
-  transition-delay: 0.15s;
-}
-
 /*   ========== ========== About ========== ==========   */
 
 .about__section
@@ -117,6 +6,7 @@
   padding: 120px;
   width: 100%;
   min-height: 100vh;
+  background: #111111;
 }
 
 .about__text
@@ -126,7 +16,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .about__title
@@ -206,7 +95,7 @@
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: var(--color-dark-dark);
+  background: #111111;
   border-radius: 50%;
   left: 8em;
   overflow: hidden;
@@ -245,7 +134,7 @@
   content: '';
   position: absolute;
   inset: 6px;
-  background: var(--color-dark-dark);
+  background: #111111;
   border-radius: 50%;
   z-index: 1;
 }
@@ -298,4 +187,27 @@
 .about__box:hover .about__img
 {
   opacity: 0;
+}
+
+/*   ========== ========== Skill ========== ==========   */
+
+.skill__section
+{
+  position: relative;
+  width: 100%;
+  background: #111111;
+}
+
+.skill__content
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill__content img
+{
+  margin: 40px;
 }
