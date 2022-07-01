@@ -6,7 +6,7 @@
   padding: 100px;
   width: 100%;
   min-height: 100vh;
-  background: var(--color-dark-dark);
+  background: #111111;
 }
 
 .work__section2
@@ -15,7 +15,7 @@
   padding: 100px;
   width: 100%;
   min-height: 80vh;
-  background: var(--color-dark-dark);
+  background: #111111;
 }
 
 .work__title
@@ -52,7 +52,7 @@
   width: 80%;
   height: 600px;
   margin-left: 2%;
-  background: var(--color-dark);
+  background: #111111;
 }
 
 .work__clip
@@ -88,21 +88,21 @@
 
 .clip4
 {
-  background-image: url(../Content/Project/p3.webp);
+  background-image: url(../Content/Project/thefitclub.png);
   clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
   background-size: cover;
 }
 
 .clip5
 {
-  background-image: url(../Content/Project/p4.webp);
+  background-image: url(../Content/Project/exercise.png);
   clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
   background-size: cover;
 }
 
 .clip6
 {
-  background-image: url(../Content/Project/p6.webp);
+  background-image: url(../Content/Project/portfolio2.0.png);
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
   background-size: cover;
 }

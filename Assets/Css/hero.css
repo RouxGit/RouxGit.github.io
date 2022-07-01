@@ -106,7 +106,7 @@
 
 .social__links:hover
 {
-  background: var(--color-title);
+  background: var(--color-white-light);
   transform: translateY(-10px);
 }
 

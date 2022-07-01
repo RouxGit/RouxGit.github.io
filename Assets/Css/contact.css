@@ -223,14 +223,14 @@
   height: 50px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: 0.5s ease-in-out;
 }
 
 .contact__social-links:hover
 {
-  background: var(--color-title);
+  background: #222222;
   transform: translateY(-10px);
 }
 
@@ -264,6 +264,7 @@ iframe
   .contact__section
   {
     padding: 20px;
+    background: #000000;
   }
 
   .contact__box

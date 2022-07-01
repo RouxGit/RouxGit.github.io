@@ -31,6 +31,8 @@
 
   <link rel='stylesheet' href='Assets/Css/contact.css'>
 
+  <link rel='stylesheet' href='Assets/Css/footer.css'>
+
   <title>Roux Studios</title>
 
 </head>
@@ -85,11 +87,13 @@
 
     <ul class='social__container'>
 
-        <li class='social__link'><a href='https://www.instagram.com/8.roux.8/?hl=es-la' target='_blank' class='social__links' style='--i:8;'><img src='Assets/Content/Social/instagram.svg' alt='instagram' class='social__img'></a></li>
+        <li class='social__link'><a href='https://www.instagram.com/8.roux.8/?hl=es-la' target='_blank' class='social__links' style='--i:8;'><img src='Assets/Content/Social/instagram.svg' alt='Instagram' class='social__img'></a></li>
 
-        <li class='social__link'><a href='https://twitter.com/LautaroRoux' target='_blank' class='social__links' style='--i:9;'><img src='Assets/Content/Social/twitter.svg' alt='twitter' class='social__img'></a></li>
+        <li class='social__link'><a href='https://twitter.com/LautaroRoux' target='_blank' class='social__links' style='--i:9;'><img src='Assets/Content/Social/twitter.svg' alt='Twitter' class='social__img'></a></li>
 
-        <li class='social__link'><a href='https://www.linkedin.com/in/david-roux-984827232/' target='_blank' class='social__links' style='--i:10;'><img src='Assets/Content/Social/linkedin.svg' alt='linkedin' class='social__img'></a></li>
+        <li class='social__link'><a href='https://www.linkedin.com/in/david-roux-984827232/' target='_blank' class='social__links' style='--i:10;'><img src='Assets/Content/Social/linkedin.svg' alt='Linkedin' class='social__img'></a></li>
+
+        <li class='social__link'><a href='https://github.com/RouxGit' target='_blank' class='social__links' style='--i:11;'><img src='Assets/Content/Social/github.svg' alt='Github' class='social__img'></a></li>
 
     </ul>
 
@@ -154,9 +158,9 @@
 
         <div class='work__content'>
 
-          <h1>Cara</h1>
-          <p>This is a dynamic, easy-to-understand and intuitive website. Adaptable to any technology. It uses HTML, CSS AND pure JavaScript.</p>
-          <a href='https://rouxgit.github.io/EcommerceCara.github.io/' target='_blank' class='button'><span class='button__span'>See More</span></a>
+          <h1>The Fit Club</h1>
+          <p>This is a dynamic, easy-to-understand and intuitive website. Adaptable to any technology. It uses ReactJS, CSS.</p>
+          <a href='https://fitclub-1my.pages.dev/' target='_blank' class='button'><span class='button__span'>See More</span></a>
 
         </div>
 
@@ -165,9 +169,9 @@
 
         <div class='work__content'>
 
-          <h1>Educational</h1>
+          <h1>Exercise</h1>
           <p>This is a dynamic, easy-to-understand and intuitive website. Adaptable to any technology. It uses HTML, CSS AND pure JavaScript.</p>
-          <a href='https://rouxgit.github.io/EducationEducal.github.io/' target='_blank' class='button'><span class='button__span'>See More</span></a>
+          <a href='https://github.com/RouxGit/Gym_React' target='_blank' class='button'><span class='button__span'>See More</span></a>
 
         </div>
 
@@ -176,8 +180,8 @@
 
         <div class='work__content'>
 
-          <h1>Modak</h1>
-          <p>This is a dynamic, easy-to-understand and intuitive website. Adaptable to any technology. It uses HTML, CSS AND pure JavaScript.</p>
+          <h1>Portfolio ReactJS</h1>
+          <p>This is a dynamic, easy-to-understand and intuitive website. Adaptable to any technology. It uses React and CSS Tailwind</p>
           <a href='https://rouxgit.github.io/PhotographyModak.github.io/' target='_blank' class='button'><span class='button__span'>See More</span></a>
 
         </div>
@@ -403,7 +407,7 @@
       <div class='contact__form form'>
 
         <h3 class='contact__description'>Contact Me</h3>
-        <form>
+        <form action='https://formspree.io/f/mlezkqwp' method='POST'>
 
           <div class='form__box'>
 
@@ -412,14 +416,14 @@
               <div class='input__box'>
 
                 <span class='input__span'>First Name</span>
-                <input type="text" placeholder='David'>
+                <input type="text" name='first_name' placeholder='David'>
 
               </div>
 
               <div class='input__box'>
               
                 <span class='input__span'>Last Name</span>
-                <input type="text" placeholder='Roux'>
+                <input type="text" name='last_name' placeholder='Roux'>
               
               </div>
 
@@ -430,14 +434,14 @@
               <div class='input__box'>
 
                 <span class='input__span'>Email</span>
-                <input type='email' placeholder='droux.email@gmail.com'>
+                <input type='email' name='email' placeholder='droux.email@gmail.com'>
 
               </div>
 
               <div class='input__box'>
               
                 <span class='input__span'>Mobile</span>
-                <input type='tel' placeholder='(+54)9 11 2255 8745'>
+                <input type='tel' name='phone' placeholder='(+54)9 11 2255 8745'>
               
               </div>
 
@@ -448,7 +452,7 @@
               <div class='input__box'>
 
                 <span class='input__span'>Message</span>
-                <textarea placeholder='White your message here...'></textarea>
+                <textarea name='message' placeholder='White your message here...'></textarea>
 
               </div>
 
@@ -502,9 +506,10 @@
 
           <ul class='contact__social-item'>
 
-            <li class='contact__social-link'><a href='https://www.instagram.com/8.roux.8/?hl=es-la' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/instagram.svg' alt='instagram' class='contact__social-img'></a></li>
-            <li class='contact__social-link'><a href='https://twitter.com/LautaroRoux' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/twitter.svg' alt='twitter' class='contact__social-img'></a></li>
-            <li class='contact__social-link'><a href='https://www.linkedin.com/in/david-roux-984827232/' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/linkedin.svg' alt='linkedin' class='contact__social-img'></a></li>
+            <li class='contact__social-link'><a href='https://www.instagram.com/8.roux.8/?hl=es-la' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/instagram.svg' alt='Instagram' class='contact__social-img'></a></li>
+            <li class='contact__social-link'><a href='https://twitter.com/LautaroRoux' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/twitter.svg' alt='Twitter' class='contact__social-img'></a></li>
+            <li class='contact__social-link'><a href='https://www.linkedin.com/in/david-roux-984827232/' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/linkedin.svg' alt='Linkedin' class='contact__social-img'></a></li>
+            <li class='contact__social-link'><a href='https://github.com/RouxGit' target='_blank' class='contact__social-links'><img src='Assets/Content/Social/github.svg' alt='Github' class='contact__social-img'></a></li>
 
           </ul>
 
@@ -526,9 +531,38 @@
 
   <!-- === Footer === -->
 
-  <footer class='footer'>
+  <footer class='footer__section' id='footer'>
 
+    <div class='footer__waves'>
 
+      <div class='footer__wave' id='wave'></div>
+      <div class='footer__wave' id='wave2'></div>
+      <div class='footer__wave' id='wave3'></div>
+      <div class='footer__wave' id='wave4'></div>
+
+    </div>
+
+    <div class='footer__container'>
+
+      <ul class='footer__social'>
+
+        <li class='footer__link'><a href='https://www.instagram.com/8.roux.8/?hl=es-la' target='_blank' class='footer__links' t><img src='Assets/Content/Social/instagram.svg' alt='Instagram' class='footer__social-img'></a></li>
+        <li class='footer__link'><a href='https://twitter.com/LautaroRoux' target='_blank' class='footer__links'><img src='Assets/Content/Social/twitter.svg' alt='Twitter' class='footer__social-img'></a></li>
+        <li class='footer__link'><a href='https://www.linkedin.com/in/david-roux-984827232/' target='_blank' class='footer__links'><img src='Assets/Content/Social/linkedin.svg' alt='Linkedin' class='footer__social-img'></a></li>
+        <li class='footer__link'><a href='https://github.com/RouxGit' target='_blank' class='footer__links'><img src='Assets/Content/Social/github.svg' alt='Github' class='footer__social-img'></a></li>
+
+      </ul>
+
+      <ul class='footer__menu'>
+
+        <li class='footer__link'><a href='#header'>Home</a></li>
+        <li class='footer__link'><a href='#services'>Services</a></li>
+
+      </ul>
+
+      <p class='footer__paragraph'>&#169;Roux Studios | All Rights Reserved</p>
+
+    </div>
 
   </footer>
 
