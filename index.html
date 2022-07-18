@@ -27,8 +27,6 @@
   
   <link rel='stylesheet' href='Assets/Css/style.css'>
 
-  <link rel='stylesheet' href='Assets/Css/loader.css'>
-
   <link rel='stylesheet' href='Assets/Css/navigation.css'>
 
   <link rel='stylesheet' href='Assets/Css/home.css'>
@@ -62,60 +60,6 @@
 </head>
 
 <body>
-
-  <!-- ===== =====  Loader ===== ===== -->
-  
-  <loader class='loader__section' id='loader'>
-
-		<h1 class='loader__logo'>ROUX STUDIOS</h1>
-
-		<div class='loader__titles'>
-
-			<div class='loader__title title-1'><h1>Make</h1></div>
-
-			<div class='loader__title title-2'><h1>A</h1></div>
-
-			<div class='loader__title title-3'><h1>Difference</h1></div>
-
-		</div>
-
-		<ul class='loader__blocks'>
-
-			<li class='loader__block block-1'></li>
-
-			<li class='loader__block block-2'></li>
-
-			<li class='loader__block block-3'></li>
-
-			<li class='loader__block block-4'></li>
-
-			<li class='loader__block block-5'></li>
-
-			<li class='loader__block block-6'></li>
-
-		</ul>
-
-	</loader>
-
-  <script type='text/javascript'>
-
-		TweenMax.staggerFrom('.loader__titles > div', 0.8, { x: "-60", ease: Power3.easeInOut, opacity: "0", }, 2 );
-
-		TweenMax.staggerTo('.loader__titles > div',0.8,{ x: "60", ease: Power3.easeInOut, delay: 1.2, opacity: "0", }, 2 );
-
-		TweenMax.staggerFrom('li', 3, { x: "-1600", delay: 4.2, ease: Expo.easeInOut, }, 0.16 );
-
-		TweenMax.staggerTo( 'li', 2.6, { x: "1600", delay: 6.8, ease: Expo.easeInOut, }, 0.2 );
-
-		var textWrapper = document.querySelector('.loader__logo');
-
-		textWrapper.innerHTML = textWrapper.textContent.replace( /\S/g, '<span class="letter">$&</span>' );
-
-		anime.timeline().add( { targets: '.loader__logo .letter', opacity: [0, 1], translateY: [80, 0], translateZ: 0, easing: 'easeOutExpo', duration: 2000, delay: 8400 + 40, }, );
-
-    window.onload = function () { document.querySelector('#loader').style.display = 'none'; }
-
-	</script>
 
   <main class='wrapper'>
 

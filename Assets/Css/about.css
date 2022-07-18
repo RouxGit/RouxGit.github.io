@@ -32,7 +32,7 @@ html, body
 	height: 100px;
 }
 
-/* About Text Left */
+/* ========== About Text Left ========== */
 
 .about__content-text
 {
@@ -55,7 +55,7 @@ html, body
 	}
 }
 
-/* About Image Right */
+/* ========== About Image Right ========== */
 
 .about__container-img
 {
@@ -93,7 +93,7 @@ html, body
 	}
 }
 
-/* About Container Description */
+/* ========== About Container Description ========== */
 
 .about__content-description
 {
@@ -107,7 +107,7 @@ html, body
 	justify-content: space-between;
 }
 
-/* About Container Text */
+/* ========== About Container Text ========== */
 
 .about__container-text
 {
@@ -146,7 +146,7 @@ html, body
 	}
 }
 
-/* projects */
+/* ========== projects ========== */
 
 .project__menu
 {
@@ -314,7 +314,7 @@ html, body
 	}
 }
 
-/*  About Socials */
+/* ========== About Socials ========== */
 
 .socials
 {
@@ -334,8 +334,14 @@ html, body
 .socials .socials__container a
 {
 	cursor: pointer;
+  color: var(--color-title);
 	text-decoration: none;
 	font-size: 64px;
+}
+
+.socials .socials__container a:hover
+{
+  color: var(--color-alternate-2);
 }
 
 @media (max-width: 900px)
@@ -346,7 +352,7 @@ html, body
 	}
 }
 
-/* Footer */
+/* ========== Footer ========== */
 
 .footer__info
 {
