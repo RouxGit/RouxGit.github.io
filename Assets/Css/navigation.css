@@ -1,0 +1,182 @@
+/*   ========== ========== Navigation ========== ==========   */
+
+.navigation
+{
+  width: 100%;
+  background: var(--color-dark-dark);
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+}
+
+#brand
+{
+  float: left;
+  display: block;
+  margin-left: 82px;
+  line-height: 80px;
+  font-weight: 800;
+}
+
+.logo
+{
+  color: #B39565;
+  font-size: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.logo:hover
+{
+  color: #F7743D;
+  text-decoration: none;
+}
+
+.nav__links
+{
+  float: left;
+  right: 80px;
+  font-size: 20px;
+  position: fixed;
+}
+
+.nav__list
+{
+  padding-left: 40px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 80px;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.nav__link
+{
+  color: #B39565;
+}
+
+.nav__link:hover
+{
+  color: #F7743D;
+  text-decoration: none;
+}
+
+#toggle
+{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-weight: 300;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+
+#resize
+{
+  top: 0px;
+	position: fixed;
+	background: #0f0f0f;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease-out;
+	z-index: 1;
+}
+
+.close__button
+{
+  position: absolute;
+  right: 16px;
+  font-weight: 300;
+  z-index: 2;
+  cursor: pointer;
+  top: -2px;
+  line-height: 80px;
+}
+
+#resize .nav__links
+{
+  height: 90px;
+  position: absolute;
+  left: 45%;
+  transform: translateX(-40%);
+  text-align: center;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#resize .nav__list
+{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#resize .nav__list:nth-child(1)
+{
+  margin-top: 140px;
+}
+
+#resize .nav__link
+{
+  color: #B39565;
+}
+
+#resize .nav__link:hover
+{
+  text-decoration: none;
+}
+
+#resize.active
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media(max-width: 768px)
+{
+  #toggle
+  {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 6px;
+    margin-right: 4px;
+  }
+
+  #brand
+  {
+    margin-left: 24px;
+  }
+
+  .nav__link
+  {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .navigation .nav__links
+  {
+    display: none;
+  }
+}
+
+@media(min-width: 768px)
+{
+  #resize
+  {
+    visibility: hidden !important;
+  }
+}
+
