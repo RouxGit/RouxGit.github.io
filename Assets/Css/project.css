@@ -1,0 +1,69 @@
+/*   ========== ========== Project ========== ==========   */
+
+.project__section
+{
+  align-items: center;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+
+.project__item
+{
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FF9E52;
+  font-size: 5em;
+}
+
+.project__1
+{
+  background: url(../Component/Project/cara.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__2
+{
+  background: url(../Component/Project/modak.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__3
+{
+  background: url(../Component/Project/educational.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__4
+{
+  background: url(../Component/Project/thefitclub.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__5
+{
+  background: url(../Component/Project/MAD.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__6
+{
+  background: url(../Component/Project/MAD2.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__7
+{
+  background: url(../Component/Project/MAD3.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__8
+{
+  background: url(../Component/Project/MAD4.png) no-repeat 50% 50%;
+  background-size: cover;
+}
